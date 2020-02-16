@@ -1,7 +1,6 @@
 # ember-store
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Online store project, frontend is built on Ember.js and backend on Node.js, using MongoDB as a default database. Demo is available on Heroku: https://ember-store.herokuapp.com/. Project's API can be found here: https://github.com/arinabarnett/ember-store-api
 
 ## Prerequisites
 
@@ -28,25 +27,11 @@ You will need the following things properly installed on your computer.
 
 Make use of the many generators for code, try `ember help generate` for more details
 
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `npm run lint:hbs`
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
-
 ### Building
 
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
