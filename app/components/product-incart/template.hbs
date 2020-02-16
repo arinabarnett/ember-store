@@ -1,0 +1,15 @@
+ <div class="cart-item">
+    <img class="cart-img" src="{{product.image}}" alt="img">
+    <div class="cart-item-description">
+          <a onclick={{action "removeItem"}} class="close"></a>
+          <li class="product-name">{{product.name}}</li>
+          <li class="incart-description">{{product.description}}</li>
+          <li>Availiable quantity: {{product.available_quantity}}</li>
+          <li>Price/item: {{product.price}}$</li>
+        <div class="input-group">
+          <input onclick={{action "removeFromCart"}} type="button" value="-" class="button-minus" data-field="quantity">
+          <input type="number" step="1" max="" value={{product.ordered_quantity}} name="quantity" class="quantity-field">
+          <input onclick={{action "addMore"}} type="button" value="+" class="button-plus" data-field="quantity">
+        </div>
+    </div>
+ </div>

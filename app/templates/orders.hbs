@@ -1,0 +1,35 @@
+{{!-- Navigation  --}}
+
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <a class="navbar-brand" href="/orders">Orders</a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/cart">Cart</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+ {{!-- Table of orders --}}
+
+<div class="container">
+ <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Order Id</th>
+      <th scope="col">Customer Info</th>
+      <th scope="col">Order Info</th>
+      <th scope="col">Total Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each @model as |order|}}
+    <Order @order={{order}}/>
+   {{/each}}
+  </tbody> 
+</table>
+</div>

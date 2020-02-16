@@ -1,0 +1,15 @@
+<tr>
+      <th scope="row">
+          {{@order.id}}
+          </th>
+      <td>Name: {{@order.customer_name}}<br/>
+          Phone: {{@order.customer_phone}}<br/>
+          Delivery address: {{@order.address}}<br/>
+      </td>
+      <td>Products ordered: {{items}}<br/>
+          Total amount of ordered products: {{@order.products_count}}<br/>
+      </td>
+      <td>{{@order.total_price}}$</td> 
+</tr>
+
+

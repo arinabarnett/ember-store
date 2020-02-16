@@ -1,0 +1,12 @@
+<div class="product">
+    <img class="product-img" src="{{product.img_src}}" alt="img">
+        <div class="product-description">
+            <h4>{{product.name}}</h4>
+            <div>Description: {{product.description}}</div>
+            <div>Price: {{product.price}}$</div>
+            <div>Quantity: {{product.available_quantity}}</div>
+        </div>
+    <button onclick={{action "addToCart"}} type="button" class="btn btn-dark {{if isAddDisabled 'disabled' ''}}">
+        Add to cart
+    </button>
+</div>

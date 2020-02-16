@@ -1,0 +1,21 @@
+{{!-- Navigation  --}}
+
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <a class="navbar-brand" href="/cart">Products</a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/orders">Orders</a>
+      </li>
+    </ul>
+  </div>
+  <Cart />
+</nav>
+
+{{!-- Products --}}
+
+<div class="container">
+  {{#each @model as |product|}}
+  <Product @product={{product}} />
+  {{/each}}
+</div>
